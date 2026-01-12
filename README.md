@@ -1,27 +1,36 @@
-myPortfolio
-°ÔÀÓ & Ç®½ºÅÃ °³¹ßÀÚ¸¦ À§ÇÑ Çö´ëÀûÀÌ°í ÀÎÅÍ·¢Æ¼ºêÇÑ Æ÷Æ®Æú¸®¿À À¥»çÀÌÆ®ÀÔ´Ï´Ù.
-GitHub ÇÁ·ÎÁ§Æ®, ¹®¼­, º¸À¯ ±â¼úÀ» ÇÁ¸®¹Ì¾ö ¾Ö´Ï¸ŞÀÌ¼Ç°ú ´ÙÅ© Å×¸¶·Î ½Ã°¢È­ÇÏ¿© º¸¿©Áİ´Ï´Ù.
+# Choi Seong-hyo Portfolio Website
 
-ÁÖ¿ä ±â´É (Features)
-* È÷¾î·Î ¼½¼Ç (Hero Section)
-3D ½ºÅ¸ÀÏÀÇ ÆÄÆ¼Å¬ ¹è°æ(½Ã¹Ä·¹ÀÌ¼Ç)°ú ÀÚ±â¼Ò°³ ¿µ¿ª
-* ±â¼ú ½ºÅÃ (Skills)
-Unity, Server, Web ¿µ¿ªº°·Î ºĞ·ùµÈ ¹èÁö ÇüÅÂÀÇ ±â¼ú ¸ñ·Ï
-* ÇÁ·ÎÁ§Æ® °¶·¯¸® (Project Gallery)
-GitHub ¹× Google Drive ¹®¼­·Î ¿¬°áµÇ´Â ÀÎÅÍ·¢Æ¼ºê Ä«µå UI
-* »ç¿ë ±â¼ú (Tech Stack)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://srunaic.github.io/my_portfolio_website/)
+[![Download Launcher](https://img.shields.io/badge/Download-Launcher-blue)](https://github.com/srunaic/my_portfolio_website/releases/latest/download/Portfolio_Launcher.bat)
+
+## ğŸš€ Quick Launch
+Want to view my portfolio immediately?
+**[Click here to download the Portfolio_Launcher.bat](https://github.com/srunaic/my_portfolio_website/releases/latest/download/Portfolio_Launcher.bat)**
+*(Just run the file, and it will open the website for you.)*
+
+---
+
+## ğŸ’» Tech Stack
+- **Game Engine**: Unity (Integration showcased))
+* íˆì–´ë¡œ ì„¹ì…˜ (Hero Section)
+3D ìŠ¤íƒ€ì¼ì˜ íŒŒí‹°í´ ë°°ê²½(ì‹œë®¬ë ˆì´ì…˜)ê³¼ ìê¸°ì†Œê°œ ì˜ì—­
+* ê¸°ìˆ  ìŠ¤íƒ (Skills)
+Unity, Server, Web ì˜ì—­ë³„ë¡œ ë¶„ë¥˜ëœ ë°°ì§€ í˜•íƒœì˜ ê¸°ìˆ  ëª©ë¡
+* í”„ë¡œì íŠ¸ ê°¤ëŸ¬ë¦¬ (Project Gallery)
+GitHub ë° Google Drive ë¬¸ì„œë¡œ ì—°ê²°ë˜ëŠ” ì¸í„°ë™í‹°ë¸Œ ì¹´ë“œ UI
+* ì‚¬ìš© ê¸°ìˆ  (Tech Stack)
 React 19, TypeScript, Tailwind CSS v4, Framer Motion
 
-·ÎÄÃ ½ÇÇà ¹æ¹ı (How to Run Locally) 
-1. ÀÌ Æú´õ¸¦ VS Code ¶Ç´Â ÅÍ¹Ì³Î¿¡¼­ ¿±´Ï´Ù.
-2. ÀÇÁ¸¼º ÆĞÅ°Áö¸¦ ¼³Ä¡ÇÕ´Ï´Ù (ÀÌ¹Ì ¼³Ä¡µÇ¾î ÀÖ´Ù¸é »ı·« °¡´É).
+ë¡œì»¬ ì‹¤í–‰ ë°©ë²• (How to Run Locally) 
+1. ì´ í´ë”ë¥¼ VS Code ë˜ëŠ” í„°ë¯¸ë„ì—ì„œ ì—½ë‹ˆë‹¤.
+2. ì˜ì¡´ì„± íŒ¨í‚¤ì§€ë¥¼ ì„¤ì¹˜í•©ë‹ˆë‹¤ (ì´ë¯¸ ì„¤ì¹˜ë˜ì–´ ìˆë‹¤ë©´ ìƒëµ ê°€ëŠ¥).
 3. npm install
-4. °³¹ß ¼­¹ö¸¦ ½ÇÇàÇÕ´Ï´Ù.
+4. ê°œë°œ ì„œë²„ë¥¼ ì‹¤í–‰í•©ë‹ˆë‹¤.
 5. npm run dev
-6. ÅÍ¹Ì³Î¿¡ Ç¥½ÃµÇ´Â ÁÖ¼Ò (¿¹: http://localhost:5173)¸¦ ºê¶ó¿ìÀú¿¡¼­ ¿±´Ï´Ù.
+6. í„°ë¯¸ë„ì— í‘œì‹œë˜ëŠ” ì£¼ì†Œ (ì˜ˆ: http://localhost:5173)ë¥¼ ë¸Œë¼ìš°ì €ì—ì„œ ì—½ë‹ˆë‹¤.
 
-ÇÁ·Î´ö¼Ç ºôµå ¹æ¹ı (How to Build for Production)
-Á¤Àû ºôµå ÆÄÀÏÀ» »ı¼ºÇÏ¿© ¼­¹ö¿¡ ¾÷·ÎµåÇÏ·Á¸é ¾Æ·¡ ¸í·É¾î¸¦ ½ÇÇàÇÕ´Ï´Ù.
+í”„ë¡œë•ì…˜ ë¹Œë“œ ë°©ë²• (How to Build for Production)
+ì •ì  ë¹Œë“œ íŒŒì¼ì„ ìƒì„±í•˜ì—¬ ì„œë²„ì— ì—…ë¡œë“œí•˜ë ¤ë©´ ì•„ë˜ ëª…ë ¹ì–´ë¥¼ ì‹¤í–‰í•©ë‹ˆë‹¤.
 npm run build
-ºôµå °á°ú¹°Àº dist Æú´õ¿¡ »ı¼ºµË´Ï´Ù.
+ë¹Œë“œ ê²°ê³¼ë¬¼ì€ dist í´ë”ì— ìƒì„±ë©ë‹ˆë‹¤.
 
