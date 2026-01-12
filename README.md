@@ -3,19 +3,6 @@
 <<<<<<< HEAD
 ## 🔗 [Visit My Portfolio (Click Here!)](https://srunaic.github.io/my_portfolio_website/)
 
----
-
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://srunaic.github.io/my_portfolio_website/)
-[![Download Launcher](https://img.shields.io/badge/Download-Launcher-blue)](https://github.com/srunaic/my_portfolio_website/raw/main/Portfolio_Launcher.bat)
-
-## 🚀 Quick Launch
-Want to view my portfolio immediately?
-*   **Web**: **[https://srunaic.github.io/my_portfolio_website/](https://srunaic.github.io/my_portfolio_website/)**
-*   **Desktop App**: **[Download Portfolio_Launcher.bat](https://github.com/srunaic/my_portfolio_website/raw/main/Portfolio_Launcher.bat)**
-
----
-
-=======
 >>>>>>> 7d94bdfafd1ad1328df0e9d99cee1cb58dec785d
 ## 💻 Tech Stack
 - **Game Engine**: Unity (Integration showcased))
