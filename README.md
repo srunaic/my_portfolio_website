@@ -1,12 +1,16 @@
 # Choi Seong-hyo Portfolio Website
 
+## 🔗 [Visit My Portfolio (Click Here!)](https://srunaic.github.io/my_portfolio_website/)
+
+---
+
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://srunaic.github.io/my_portfolio_website/)
 [![Download Launcher](https://img.shields.io/badge/Download-Launcher-blue)](https://github.com/srunaic/my_portfolio_website/raw/main/Portfolio_Launcher.bat)
 
 ## 🚀 Quick Launch
 Want to view my portfolio immediately?
-**[Click here to download the Portfolio_Launcher.bat](https://github.com/srunaic/my_portfolio_website/raw/main/Portfolio_Launcher.bat)**
-*(Just run the file, and it will open the website for you.)*
+*   **Web**: **[https://srunaic.github.io/my_portfolio_website/](https://srunaic.github.io/my_portfolio_website/)**
+*   **Desktop App**: **[Download Portfolio_Launcher.bat](https://github.com/srunaic/my_portfolio_website/raw/main/Portfolio_Launcher.bat)**
 
 ---
 
