@@ -1,4 +1,7 @@
 # Choi Seong-hyo Portfolio Website
+
+## 아래링크로 반드시 접속해주세요。 
+
 ## 🔗 [포트폴리오 웹 사이트 방문 이 글을 클릭해주세요)](https://srunaic.github.io/my_portfolio_website/)
 
 ## 💻 Tech Stack
