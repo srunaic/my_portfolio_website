@@ -1,9 +1,6 @@
 # Choi Seong-hyo Portfolio Website
-
-<<<<<<< HEAD
-## 🔗 [Visit My Portfolio (Click Here!)](https://srunaic.github.io/my_portfolio_website/)
-
->>>>>>> 7d94bdfafd1ad1328df0e9d99cee1cb58dec785d
+## 🔗 [포트폴리오 웹 사이트 방문)](https://srunaic.github.io/my_portfolio_website/)
+1ad1328df0e9d99cee1cb58dec785d
 ## 💻 Tech Stack
 - **Game Engine**: Unity (Integration showcased))
 * 히어로 섹션 (Hero Section)
