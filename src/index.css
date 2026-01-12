@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-white font-sans antialiased overflow-x-hidden;
+  }
+}
+
+@theme {
+  --color-brand-dark: #000000;
+  --color-brand-primary: #ffffff;
+  --color-brand-gray: #a1a1aa;
+}
