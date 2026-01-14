@@ -57,6 +57,14 @@ const projects = [
         tech: ["PDF", "Portfolio"],
         link: "https://drive.google.com/file/d/15Y0hztE1ScD6eXezsbjoZV8lUOhlKvdj/view?usp=drive_link",
         isRepo: false
+    },
+    {
+        title: "Sensor & PLC Raspberry Pi",
+        type: "Hardware Integration / IoT",
+        desc: "Integration of sensors and PLC systems using Raspberry Pi. Features real-time data monitoring and automation control logic.",
+        tech: ["Raspberry Pi", "PLC", "Python", "Sensors"],
+        link: "https://github.com/srunaic/sensor_plc_rasberrypie-",
+        isRepo: true
     }
 ];
 
