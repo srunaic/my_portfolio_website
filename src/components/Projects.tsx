@@ -65,6 +65,14 @@ const projects = [
         tech: ["Raspberry Pi", "PLC", "Python", "Sensors"],
         link: "https://github.com/srunaic/sensor_plc_rasberrypie-",
         isRepo: true
+    },
+    {
+        title: "DirectX Game Engine",
+        type: "Game Engine / Graphics",
+        desc: "Custom game engine development using DirectX 11/12. Implemented rendering pipeline, component-based object system, and physics integration.",
+        tech: ["C++", "DirectX", "HLSL", "Win32 API"],
+        link: "https://github.com/srunaic/DirectX_Game_EngineMaker",
+        isRepo: true
     }
 ];
 
