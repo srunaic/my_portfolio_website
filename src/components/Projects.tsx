@@ -73,6 +73,14 @@ const projects = [
         tech: ["C++", "DirectX", "HLSL", "Win32 API"],
         link: "https://github.com/srunaic/DirectX_Game_EngineMaker",
         isRepo: true
+    },
+    {
+        title: "AI Hacker Protection",
+        type: "AI / Security",
+        desc: "Advanced security system utilizing AI to detect and prevent hacking attempts. Features real-time threat analysis and automated defense response.",
+        tech: ["Python", "TensorFlow", "Cyber Security", "AI"],
+        link: "https://github.com/srunaic/AI_Hacker_Protection",
+        isRepo: true
     }
 ];
 
