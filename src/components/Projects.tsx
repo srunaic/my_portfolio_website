@@ -81,6 +81,14 @@ const projects = [
         tech: ["Python", "TensorFlow", "Cyber Security", "AI"],
         link: "https://github.com/srunaic/AI_Hacker_Protection",
         isRepo: true
+    },
+    {
+        title: "Traffic GIS Controller",
+        type: "GIS / System Control",
+        desc: "Traffic control system utilizing GIS (Geographic Information System) data. Real-time traffic flow monitoring and signal control optimization logic.",
+        tech: ["GIS", "C#", ".NET", "System Control"],
+        link: "https://github.com/srunaic/TrafficGIS_Controller",
+        isRepo: true
     }
 ];
 
