@@ -89,6 +89,14 @@ const projects = [
         tech: ["GIS", "C#", ".NET", "System Control"],
         link: "https://github.com/srunaic/TrafficGIS_Controller",
         isRepo: true
+    },
+    {
+        title: "Design AI Agent Support",
+        type: "AI / Automation",
+        desc: "AI-powered design assistant that automates design workflows and provides intelligent support for creative tasks using machine learning.",
+        tech: ["Python", "AI", "Automation", "LLM"],
+        link: "https://github.com/srunaic/design-ai-agent-support",
+        isRepo: true
     }
 ];
 
