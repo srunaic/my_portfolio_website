@@ -11,15 +11,22 @@ interface Project {
     tech: string[];
     link: string;
     isRepo: boolean;
+    hidden?: boolean;
 }
 
-const CATEGORIES = [
+interface CategoryItem {
+    id: 'all' | 'game-server' | 'ai' | 'web-iot' | 'docs';
+    label: string;
+    hidden?: boolean;
+}
+
+const CATEGORIES: CategoryItem[] = [
     { id: 'all', label: '전체' },
     { id: 'game-server', label: '게임 & 서버' },
     { id: 'ai', label: '인공지능 & 자동화' },
     { id: 'web-iot', label: '웹, IoT & GIS' },
-    { id: 'docs', label: '기획 & 문서' }
-] as const;
+    { id: 'docs', label: '기획 & 문서', hidden: true } // View 숨김 처리 (복원 시 hidden: false 또는 삭제)
+];
 
 const projects: Project[] = [
     {
@@ -147,9 +154,13 @@ const projects: Project[] = [
 export const Projects = () => {
     const [activeCategory, setActiveCategory] = useState<string>('all');
 
+    // View용 활성 카테고리 및 프로젝트 필터 (기획 & 문서 및 hidden 항목 숨김, 코드는 백업/복원 가능하도록 유지)
+    const visibleCategories = CATEGORIES.filter(c => !c.hidden);
+    const visibleProjects = projects.filter(p => !p.hidden && p.category !== 'docs');
+
     const filteredProjects = activeCategory === 'all'
-        ? projects
-        : projects.filter(p => p.category === activeCategory);
+        ? visibleProjects
+        : visibleProjects.filter(p => p.category === activeCategory);
 
     return (
         <section id="projects" className="py-24 bg-bg-base border-t border-bg-accent/40 relative">
@@ -170,11 +181,11 @@ export const Projects = () => {
                 {/* Corporate Header Category Navigation Box */}
                 <div className="flex justify-center mb-12">
                     <div className="inline-flex items-center gap-1.5 bg-bg-card/60 backdrop-blur-md border border-bg-accent/70 rounded-2xl p-1.5 max-w-full overflow-x-auto shadow-sm">
-                        {CATEGORIES.map((tab) => {
+                        {visibleCategories.map((tab) => {
                             const isActive = activeCategory === tab.id;
                             const count = tab.id === 'all' 
-                                ? projects.length 
-                                : projects.filter(p => p.category === tab.id).length;
+                                ? visibleProjects.length 
+                                : visibleProjects.filter(p => p.category === tab.id).length;
 
                             return (
                                 <button
