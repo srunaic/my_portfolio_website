@@ -4,6 +4,7 @@ import { Menu, X, ArrowUpRight } from 'lucide-react';
 
 const navItems = [
   { label: '홈', id: 'hero' },
+  { label: '핵심 도메인', id: 'divisions' },
   { label: '기술 스택', id: 'skills' },
   { label: '프로젝트', id: 'projects' },
   { label: '연락처', id: 'contact' },
@@ -82,14 +83,19 @@ export const Header = () => {
               e.preventDefault();
               handleNavClick('hero');
             }}
-            className="flex items-center gap-2 group"
+            className="flex items-center gap-3 group"
           >
-            <span className="font-serif text-xl font-bold tracking-tight text-text-primary group-hover:text-brand-accent transition-colors">
-              최성효
-            </span>
-            <span className="hidden sm:inline-block font-mono text-[10px] uppercase tracking-wider text-text-muted border border-bg-accent/80 px-2 py-0.5 rounded-full">
-              Developer Portfolio
-            </span>
+            <div className="relative w-8 h-8 rounded-lg overflow-hidden p-0.5 bg-gradient-to-br from-cyan-400 via-blue-600 to-purple-600 shadow-sm group-hover:scale-105 transition-transform">
+              <img src="/brand-logo.svg" alt="Logo" className="w-full h-full object-contain rounded-md" />
+            </div>
+            <div className="flex flex-col">
+              <span className="font-serif text-lg font-bold tracking-tight text-text-primary group-hover:text-brand-accent transition-colors leading-tight">
+                최성효
+              </span>
+              <span className="font-mono text-[10px] text-text-muted leading-tight tracking-wider">
+                R&D TECH STUDIO
+              </span>
+            </div>
           </a>
 
           {/* Desktop Navigation */}

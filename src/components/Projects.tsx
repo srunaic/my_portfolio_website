@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Github, FileText, ExternalLink, Layers } from 'lucide-react';
+import { ProjectThumbnail } from './ProjectThumbnails';
 
 interface Project {
     id: string;
@@ -218,38 +219,57 @@ export const Projects = () => {
                 {/* Filtered Projects Grid */}
                 <motion.div 
                     layout
-                    className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+                    className="grid md:grid-cols-2 lg:grid-cols-3 gap-7"
                 >
                     <AnimatePresence mode="popLayout">
                         {filteredProjects.map((project) => (
                             <motion.div
                                 key={project.id}
                                 layout
-                                initial={{ opacity: 0, scale: 0.94 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                exit={{ opacity: 0, scale: 0.94 }}
-                                transition={{ duration: 0.3 }}
-                                className="bg-bg-card/30 border border-bg-accent/60 rounded-xl overflow-hidden hover:border-brand-accent/40 hover:bg-bg-card/65 transition-all group flex flex-col"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, scale: 0.95 }}
+                                transition={{ duration: 0.35 }}
+                                className="bg-bg-card/40 border border-bg-accent/70 rounded-2xl overflow-hidden hover:border-brand-accent/60 hover:shadow-[0_0_25px_rgba(0,240,255,0.08)] hover:bg-bg-card/75 transition-all group flex flex-col backdrop-blur-sm"
                             >
-                                <div className="p-6 h-full flex flex-col">
-                                    <div className="flex justify-between items-start mb-4">
-                                        <div className="p-2.5 bg-bg-base border border-bg-accent/60 rounded-lg text-brand-accent transition-colors">
-                                            {project.isRepo ? <Github size={22} /> : <FileText size={22} />}
+                                {/* Project Visual Thumbnail Banner */}
+                                <div className="relative overflow-hidden border-b border-bg-accent/50 group-hover:scale-[1.01] transition-transform duration-300">
+                                    <ProjectThumbnail projectId={project.id} />
+                                    
+                                    {/* Action Link Top-Right Floating Icon */}
+                                    <a 
+                                        href={project.link} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        className="absolute top-3 right-3 p-2 rounded-xl bg-slate-900/80 hover:bg-brand-accent text-text-muted hover:text-white border border-bg-accent/60 transition-all backdrop-blur-md shadow-sm" 
+                                        aria-label="View Project Source / Documentation"
+                                    >
+                                        <ExternalLink size={15} />
+                                    </a>
+                                </div>
+
+                                <div className="p-6 flex flex-col flex-grow">
+                                    <div className="flex items-center gap-2 mb-2.5">
+                                        <div className="p-1.5 bg-bg-base border border-bg-accent/60 rounded-md text-brand-accent">
+                                            {project.isRepo ? <Github size={15} /> : <FileText size={15} />}
                                         </div>
-                                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-brand-accent transition-colors p-1" aria-label="Learn more about this project">
-                                            <ExternalLink size={18} />
-                                        </a>
+                                        <span className="text-[11px] text-brand-accent font-semibold tracking-wide font-mono select-none">
+                                            {project.type}
+                                        </span>
                                     </div>
 
-                                    <h3 className="font-serif text-lg font-bold text-text-primary mb-2 group-hover:text-brand-accent transition-colors">
+                                    <h3 className="font-serif text-lg font-bold text-text-primary mb-2.5 group-hover:text-brand-accent transition-colors leading-snug">
                                         {project.title}
                                     </h3>
-                                    <p className="text-xs text-brand-accent font-semibold mb-3 tracking-wide select-none">{project.type}</p>
-                                    <p className="text-text-muted text-[13px] leading-relaxed mb-6 flex-grow">{project.desc}</p>
+                                    
+                                    <p className="text-text-muted text-[13px] leading-relaxed mb-6 flex-grow">
+                                        {project.desc}
+                                    </p>
 
-                                    <div className="flex flex-wrap gap-2 mt-auto">
+                                    {/* Tech Tags */}
+                                    <div className="flex flex-wrap gap-1.5 mt-auto pt-4 border-t border-bg-accent/40">
                                         {project.tech.map((tag, i) => (
-                                            <span key={i} className="text-[10px] px-2 py-0.5 bg-bg-base text-text-muted rounded border border-bg-accent/60 font-mono hover:bg-brand-accent-light/40 transition-colors">
+                                            <span key={i} className="text-[10px] px-2.5 py-1 bg-bg-base/90 text-text-muted rounded-md border border-bg-accent/60 font-mono group-hover:border-brand-accent/20 transition-colors">
                                                 {tag}
                                             </span>
                                         ))}
