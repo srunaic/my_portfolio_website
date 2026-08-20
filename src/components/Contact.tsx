@@ -1,5 +1,6 @@
-﻿import React from 'react';
+import React from 'react';
 import { Mail, Phone, MapPin, Github, Send, ArrowUpRight } from 'lucide-react';
+import { BrandLogo } from './BrandLogo';
 
 export const Contact: React.FC = () => {
     return (
@@ -64,10 +65,8 @@ export const Contact: React.FC = () => {
 
                 {/* Corporate Footer */}
                 <footer className="pt-8 border-t border-bg-accent/40 flex flex-col sm:flex-row items-center justify-between text-text-muted text-xs font-mono gap-4">
-                    <div className="flex items-center gap-2">
-                        <div className="w-5 h-5 rounded overflow-hidden">
-                            <img src="/brand-logo.svg" alt="Logo" className="w-full h-full object-contain" />
-                        </div>
+                    <div className="flex items-center gap-2.5">
+                        <BrandLogo size={20} />
                         <span>SEONGHYO CHOI — R&D TECH STUDIO</span>
                     </div>
                     <div>
