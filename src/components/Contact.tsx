@@ -15,10 +15,11 @@ export const Contact: React.FC = () => {
                 </div>
 
                 <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4 text-text-primary tracking-tight">
-                    협업 및 인터뷰 문의
+                    인터뷰 문의
                 </h2>
+
                 <p className="text-text-muted mb-12 text-sm md:text-base leading-relaxed max-w-xl mx-auto">
-                    게임 클라이언트 및 대규모 분산 서버 시스템 구축에 바로 기여할 수 있는 인재를 찾고 계시다면 편하게 연락 주시기 바랍니다.
+                    전화 부재중 일시 메일 남겨주시기 바랍니다.
                 </p>
 
                 <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -50,11 +51,11 @@ export const Contact: React.FC = () => {
                 </div>
 
                 <div className="flex justify-center gap-4 mb-16">
-                    <a 
-                        href="https://github.com/srunaic" 
-                        target="_blank" 
+                    <a
+                        href="https://github.com/srunaic"
+                        target="_blank"
                         rel="noopener noreferrer"
-                        className="px-6 py-3 bg-bg-card hover:bg-bg-card/80 text-text-primary rounded-xl border border-bg-accent/80 hover:border-cyan-500/40 transition-all flex items-center gap-2.5 font-mono text-sm shadow-sm" 
+                        className="px-6 py-3 bg-bg-card hover:bg-bg-card/80 text-text-primary rounded-xl border border-bg-accent/80 hover:border-cyan-500/40 transition-all flex items-center gap-2.5 font-mono text-sm shadow-sm"
                         aria-label="Visit Seonghyo's GitHub profile"
                     >
                         <Github size={18} />
