@@ -26,7 +26,7 @@ const CATEGORIES: CategoryItem[] = [
     { id: 'game-server', label: '게임 & 서버' },
     { id: 'ai', label: '인공지능 & 자동화' },
     { id: 'web-iot', label: '웹, IoT & GIS' },
-    { id: 'docs', label: '기획 & 문서', hidden: true } // View 숨김 처리 (복원 시 hidden: false 또는 삭제)
+    { id: 'docs', label: '기획 & 문서' }
 ];
 
 const projects: Project[] = [
@@ -155,9 +155,9 @@ const projects: Project[] = [
 export const Projects = () => {
     const [activeCategory, setActiveCategory] = useState<string>('all');
 
-    // View용 활성 카테고리 및 프로젝트 필터 (기획 & 문서 및 hidden 항목 숨김, 코드는 백업/복원 가능하도록 유지)
+    // 화면에 표시할 활성 카테고리 및 프로젝트 목록
     const visibleCategories = CATEGORIES.filter(c => !c.hidden);
-    const visibleProjects = projects.filter(p => !p.hidden && p.category !== 'docs');
+    const visibleProjects = projects.filter(p => !p.hidden);
 
     const filteredProjects = activeCategory === 'all'
         ? visibleProjects
