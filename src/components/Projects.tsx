@@ -31,6 +31,16 @@ const CATEGORIES: CategoryItem[] = [
 
 const projects: Project[] = [
     {
+        id: "korea-history-cbt",
+        category: "web-iot",
+        title: "Korea History CBT & Excel System",
+        type: "온라인 교구재 개발 (EdTech & CBT System)",
+        desc: "국사편찬위원회 기출 빅데이터 기반 77개 불변 출제 공식 엑셀 DB와 1:1 연동되는 무설치 웹 CBT 문제은행 프로그램. 1초 즉각 채점, OMR 번호판, 단축키 지원 및 엑셀 일체형 뷰어를 갖춘 실전 맞춤형 디지털 교구재.",
+        tech: ["JavaScript", "HTML5/CSS3", "Excel DB", "EdTech", "CBT Engine"],
+        link: "https://github.com/srunaic/Korea_History_Exel_CBT_System",
+        isRepo: true
+    },
+    {
         id: "virtual-server",
         category: "game-server",
         title: "Virtual Server Architecture",

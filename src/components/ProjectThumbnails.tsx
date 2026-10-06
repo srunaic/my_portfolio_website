@@ -7,6 +7,104 @@ interface ThumbnailProps {
 
 export const ProjectThumbnail: React.FC<ThumbnailProps> = ({ projectId, className = "" }) => {
     switch (projectId) {
+        case 'korea-history-cbt':
+            return (
+                <div className={`relative w-full h-44 bg-slate-950 overflow-hidden rounded-t-xl flex items-center justify-center ${className}`}>
+                    <div className="absolute inset-0 bg-[radial-gradient(#d97706_1px,transparent_1px)] [background-size:16px_16px] opacity-20" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-amber-500/15" />
+                    
+                    <svg viewBox="0 0 320 160" className="w-full h-full p-2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="cbtGrad" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stopColor="#f59e0b" stopOpacity="0.8"/>
+                                <stop offset="100%" stopColor="#10b981" stopOpacity="0.4"/>
+                            </linearGradient>
+                        </defs>
+
+                        {/* CBT Browser Frame */}
+                        <rect x="25" y="15" width="270" height="128" rx="8" fill="#090d16" stroke="url(#cbtGrad)" strokeWidth="1.2" />
+                        
+                        {/* Browser Tab Bar */}
+                        <rect x="25" y="15" width="270" height="22" rx="8" fill="#0f172a" />
+                        <line x1="25" y1="37" x2="295" y2="37" stroke="#1e293b" strokeWidth="1" />
+                        <circle cx="38" cy="26" r="3" fill="#ef4444" />
+                        <circle cx="48" cy="26" r="3" fill="#f59e0b" />
+                        <circle cx="58" cy="26" r="3" fill="#10b981" />
+                        <text x="160" y="29" fill="#fbbf24" fontSize="7.5" textAnchor="middle" fontFamily="monospace" fontWeight="bold">cbt_player.html · 한국사 실전 CBT 교구재</text>
+
+                        {/* Left: CBT Question & Options */}
+                        <rect x="35" y="44" width="150" height="88" rx="5" fill="#0f172a" stroke="#334155" strokeWidth="0.8" />
+                        <rect x="42" y="50" width="136" height="22" rx="3" fill="#1e293b" stroke="#f59e0b" strokeWidth="0.6" strokeDasharray="2 2" />
+                        <text x="46" y="60" fill="#fef08a" fontSize="6" fontFamily="monospace" fontWeight="bold">[사료] 국사편찬위원회 기출 원문</text>
+                        <text x="46" y="68" fill="#94a3b8" fontSize="5.5" fontFamily="monospace">"진흥왕이 국경을 넓히고 순수관경비를..."</text>
+
+                        {/* Options */}
+                        <rect x="42" y="76" width="65" height="12" rx="2.5" fill="#1e293b" stroke="#334155" strokeWidth="0.6" />
+                        <text x="46" y="84" fill="#94a3b8" fontSize="5.5" fontFamily="monospace">① 대가야 정복</text>
+
+                        {/* Correct Answer Highlight */}
+                        <rect x="111" y="76" width="67" height="12" rx="2.5" fill="#065f46" stroke="#10b981" strokeWidth="0.8" />
+                        <text x="115" y="84" fill="#34d399" fontSize="5.5" fontFamily="monospace" fontWeight="bold">② 북한산비 건립 ✓</text>
+
+                        <rect x="42" y="91" width="65" height="12" rx="2.5" fill="#1e293b" stroke="#334155" strokeWidth="0.6" />
+                        <text x="46" y="99" fill="#94a3b8" fontSize="5.5" fontFamily="monospace">③ 우산국 복속</text>
+
+                        <rect x="111" y="91" width="67" height="12" rx="2.5" fill="#1e293b" stroke="#334155" strokeWidth="0.6" />
+                        <text x="115" y="99" fill="#94a3b8" fontSize="5.5" fontFamily="monospace">④ 사비 천도</text>
+
+                        {/* Instant Feedback Bar */}
+                        <rect x="42" y="107" width="136" height="18" rx="3" fill="#042f2e" stroke="#14b8a6" strokeWidth="0.7" />
+                        <text x="46" y="116" fill="#2dd4bf" fontSize="5.2" fontFamily="monospace" fontWeight="bold">💡 1초 컷 공식: 진흥왕=북한산/단양적성비·대가야</text>
+                        <text x="46" y="122" fill="#6ee7b7" fontSize="4.8" fontFamily="monospace">⚡ 정답 즉각 채점 완료 · 단축키 [2] 입력 감지</text>
+
+                        {/* Right: Excel DB & OMR System */}
+                        <rect x="192" y="44" width="93" height="88" rx="5" fill="#0f172a" stroke="#334155" strokeWidth="0.8" />
+                        
+                        {/* Excel Master Tag */}
+                        <rect x="198" y="50" width="81" height="14" rx="2.5" fill="#064e3b" stroke="#10b981" strokeWidth="0.6" />
+                        <text x="238" y="59" fill="#6ee7b7" fontSize="5.8" textAnchor="middle" fontFamily="monospace" fontWeight="bold">📑 EXCEL 77개 공식 연동</text>
+
+                        {/* Mini Excel Table Grid */}
+                        <rect x="198" y="68" width="81" height="26" rx="2" fill="#1e293b" stroke="#334155" strokeWidth="0.5" />
+                        <line x1="198" y1="76" x2="279" y2="76" stroke="#334155" strokeWidth="0.5" />
+                        <line x1="198" y1="85" x2="279" y2="85" stroke="#334155" strokeWidth="0.5" />
+                        <line x1="222" y1="68" x2="222" y2="94" stroke="#334155" strokeWidth="0.5" />
+                        <line x1="252" y1="68" x2="252" y2="94" stroke="#334155" strokeWidth="0.5" />
+                        <text x="210" y="74" fill="#94a3b8" fontSize="5" textAnchor="middle" fontFamily="monospace">시대</text>
+                        <text x="237" y="74" fill="#94a3b8" fontSize="5" textAnchor="middle" fontFamily="monospace">핵심사료</text>
+                        <text x="265" y="74" fill="#38bdf8" fontSize="5" textAnchor="middle" fontFamily="monospace">CBT링크</text>
+                        <text x="210" y="83" fill="#cbd5e1" fontSize="4.8" textAnchor="middle" fontFamily="monospace">삼국</text>
+                        <text x="237" y="83" fill="#cbd5e1" fontSize="4.8" textAnchor="middle" fontFamily="monospace">순수비</text>
+                        <text x="265" y="83" fill="#34d399" fontSize="4.8" textAnchor="middle" fontFamily="monospace">[Q17▶]</text>
+                        <text x="210" y="92" fill="#cbd5e1" fontSize="4.8" textAnchor="middle" fontFamily="monospace">조선</text>
+                        <text x="237" y="92" fill="#cbd5e1" fontSize="4.8" textAnchor="middle" fontFamily="monospace">대동법</text>
+                        <text x="265" y="92" fill="#34d399" fontSize="4.8" textAnchor="middle" fontFamily="monospace">[Q41▶]</text>
+
+                        {/* OMR Quick Board (Q1~Q77) */}
+                        <rect x="198" y="98" width="81" height="28" rx="2" fill="#090d16" stroke="#475569" strokeWidth="0.5" />
+                        <text x="202" y="105" fill="#f59e0b" fontSize="5" fontFamily="monospace" fontWeight="bold">OMR 1:1 빠른 번호판</text>
+                        <rect x="202" y="108" width="10" height="7" rx="1.5" fill="#10b981" />
+                        <text x="207" y="113.5" fill="#ffffff" fontSize="4.5" textAnchor="middle" fontFamily="monospace">01</text>
+                        <rect x="214" y="108" width="10" height="7" rx="1.5" fill="#10b981" />
+                        <text x="219" y="113.5" fill="#ffffff" fontSize="4.5" textAnchor="middle" fontFamily="monospace">02</text>
+                        <rect x="226" y="108" width="10" height="7" rx="1.5" fill="#f59e0b" />
+                        <text x="231" y="113.5" fill="#ffffff" fontSize="4.5" textAnchor="middle" fontFamily="monospace">03</text>
+                        <rect x="238" y="108" width="10" height="7" rx="1.5" fill="#334155" />
+                        <text x="243" y="113.5" fill="#94a3b8" fontSize="4.5" textAnchor="middle" fontFamily="monospace">04</text>
+                        <rect x="250" y="108" width="10" height="7" rx="1.5" fill="#334155" />
+                        <text x="255" y="113.5" fill="#94a3b8" fontSize="4.5" textAnchor="middle" fontFamily="monospace">05</text>
+                        <rect x="262" y="108" width="14" height="7" rx="1.5" fill="#0284c7" />
+                        <text x="269" y="113.5" fill="#ffffff" fontSize="4.5" textAnchor="middle" fontFamily="monospace">..77</text>
+
+                        <text x="202" y="121" fill="#64748b" fontSize="4.2" fontFamily="monospace">무설치 단일 탭 / 키보드 1~4</text>
+                    </svg>
+
+                    <div className="absolute bottom-3 left-4 px-2.5 py-0.5 rounded-full bg-slate-900/90 border border-amber-500/30 text-[10px] font-mono text-amber-400 backdrop-blur-md">
+                        ONLINE EDTECH & CBT SYSTEM
+                    </div>
+                </div>
+            );
+
         case 'virtual-server':
             return (
                 <div className={`relative w-full h-44 bg-slate-950 overflow-hidden rounded-t-xl flex items-center justify-center ${className}`}>

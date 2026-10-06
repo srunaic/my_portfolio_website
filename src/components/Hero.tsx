@@ -80,7 +80,7 @@ export const Hero = () => {
                                 <Layers size={16} />
                             </div>
                             <div className="font-mono text-2xl md:text-3xl font-bold text-text-primary mb-1">
-                                12+ Active
+                                13+ Active
                             </div>
                             <span className="text-[11px] text-text-muted font-sans">핵심 도메인 기술 프로젝트</span>
                         </div>
