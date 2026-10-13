@@ -7,7 +7,7 @@ const skills = [
         category: "게임 클라이언트 & 엔진 (Client & Engine)",
         badge: "GRAPHICS & XR",
         badgeColor: "text-cyan-400 border-cyan-500/30 bg-cyan-500/10",
-        items: ["Unity 3D", "DirectX 11/12", "C#", "HLSL Shaders", "UGUI", "3D Max", "Blender", "Oculus SDK"]
+        items: ["Unity 3D", "Action & Fun QA", "C#", "HLSL Shaders", "UGUI", "3D Max", "Blender", "Oculus SDK"]
     },
     {
         category: "서버 & 데이터베이스 (Server & Database)",

@@ -436,18 +436,18 @@ export const ProjectThumbnail: React.FC<ThumbnailProps> = ({ projectId, classNam
                     <svg viewBox="0 0 320 160" className="w-full h-full p-2" fill="none" xmlns="http://www.w3.org/2000/svg">
                         {/* Blueprint Documentation Sheet */}
                         <rect x="70" y="20" width="180" height="115" rx="6" fill="#0f172a" stroke="#f59e0b" strokeWidth="1.2" />
-                        <rect x="80" y="32" width="60" height="10" rx="2" fill="#f59e0b" fillOpacity="0.2" stroke="#f59e0b" strokeWidth="0.8" />
-                        <text x="110" y="39" fill="#fbbf24" fontSize="6" textAnchor="middle" fontFamily="monospace" fontWeight="bold">SPEC NOTE #1</text>
+                        <rect x="80" y="32" width="68" height="10" rx="2" fill="#f59e0b" fillOpacity="0.2" stroke="#f59e0b" strokeWidth="0.8" />
+                        <text x="114" y="39" fill="#fbbf24" fontSize="6" textAnchor="middle" fontFamily="monospace" fontWeight="bold">KOG FUN QA #1</text>
                         
                         {/* Architecture Blueprint Grid */}
                         <line x1="80" y1="52" x2="240" y2="52" stroke="#334155" strokeWidth="1" strokeDasharray="2 2" />
-                        <rect x="85" y="62" width="40" height="22" rx="3" fill="#1e293b" stroke="#38bdf8" strokeWidth="0.8" />
-                        <text x="105" y="75" fill="#38bdf8" fontSize="6" textAnchor="middle" fontFamily="monospace">CORE ARCH</text>
+                        <rect x="85" y="62" width="45" height="22" rx="3" fill="#1e293b" stroke="#38bdf8" strokeWidth="0.8" />
+                        <text x="107" y="75" fill="#38bdf8" fontSize="6" textAnchor="middle" fontFamily="monospace">ELSWORD</text>
                         
-                        <path d="M125 73 L155 73" stroke="#f59e0b" strokeWidth="1.2" strokeDasharray="3 2" />
+                        <path d="M130 73 L152 73" stroke="#f59e0b" strokeWidth="1.2" strokeDasharray="3 2" />
                         
-                        <rect x="155" y="62" width="40" height="22" rx="3" fill="#1e293b" stroke="#a855f7" strokeWidth="0.8" />
-                        <text x="175" y="75" fill="#c084fc" fontSize="6" textAnchor="middle" fontFamily="monospace">COMPONENTS</text>
+                        <rect x="152" y="62" width="55" height="22" rx="3" fill="#1e293b" stroke="#a855f7" strokeWidth="0.8" />
+                        <text x="179" y="75" fill="#c084fc" fontSize="5.5" textAnchor="middle" fontFamily="monospace">HIT-STOP QA</text>
 
                         <line x1="80" y1="95" x2="240" y2="95" stroke="#334155" strokeWidth="1" />
                         <line x1="80" y1="105" x2="210" y2="105" stroke="#334155" strokeWidth="1" />
@@ -457,7 +457,7 @@ export const ProjectThumbnail: React.FC<ThumbnailProps> = ({ projectId, classNam
                     </svg>
 
                     <div className="absolute bottom-3 left-4 px-2.5 py-0.5 rounded-full bg-slate-900/90 border border-amber-500/30 text-[10px] font-mono text-amber-400 backdrop-blur-md">
-                        ARCHITECTURE SPEC NOTE #1
+                        KOG ELSWORD COMBAT FUN QA #1
                     </div>
                 </div>
             );
@@ -469,22 +469,22 @@ export const ProjectThumbnail: React.FC<ThumbnailProps> = ({ projectId, classNam
                     
                     <svg viewBox="0 0 320 160" className="w-full h-full p-2" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="70" y="20" width="180" height="115" rx="6" fill="#0f172a" stroke="#eab308" strokeWidth="1.2" />
-                        <rect x="80" y="32" width="60" height="10" rx="2" fill="#eab308" fillOpacity="0.2" stroke="#eab308" strokeWidth="0.8" />
-                        <text x="110" y="39" fill="#fde047" fontSize="6" textAnchor="middle" fontFamily="monospace" fontWeight="bold">SPEC NOTE #2</text>
+                        <rect x="80" y="32" width="68" height="10" rx="2" fill="#eab308" fillOpacity="0.2" stroke="#eab308" strokeWidth="0.8" />
+                        <text x="114" y="39" fill="#fde047" fontSize="6" textAnchor="middle" fontFamily="monospace" fontWeight="bold">ACTION QA #2</text>
                         
                         {/* Control Flow Sequence */}
                         <circle cx="100" cy="65" r="12" fill="#1e293b" stroke="#eab308" strokeWidth="1" />
-                        <text x="100" y="68" fill="#fde047" fontSize="6.5" textAnchor="middle" fontFamily="monospace">INPUT</text>
+                        <text x="100" y="68" fill="#fde047" fontSize="6" textAnchor="middle" fontFamily="monospace">PARRY</text>
 
                         <path d="M112 65 L148 65" stroke="#eab308" strokeWidth="1.2" strokeDasharray="3 2" />
 
                         <circle cx="160" cy="65" r="12" fill="#1e293b" stroke="#34d399" strokeWidth="1" />
-                        <text x="160" y="68" fill="#34d399" fontSize="6.5" textAnchor="middle" fontFamily="monospace">LOGIC</text>
+                        <text x="160" y="68" fill="#34d399" fontSize="6" textAnchor="middle" fontFamily="monospace">EVADE</text>
 
                         <path d="M172 65 L208 65" stroke="#eab308" strokeWidth="1.2" strokeDasharray="3 2" />
 
                         <circle cx="220" cy="65" r="12" fill="#1e293b" stroke="#38bdf8" strokeWidth="1" />
-                        <text x="220" y="68" fill="#38bdf8" fontSize="6.5" textAnchor="middle" fontFamily="monospace">SYNC</text>
+                        <text x="220" y="68" fill="#38bdf8" fontSize="5.5" textAnchor="middle" fontFamily="monospace">COUNTER</text>
 
                         <line x1="80" y1="92" x2="240" y2="92" stroke="#334155" strokeWidth="1" />
                         <line x1="80" y1="102" x2="220" y2="102" stroke="#334155" strokeWidth="1" />
@@ -492,7 +492,7 @@ export const ProjectThumbnail: React.FC<ThumbnailProps> = ({ projectId, classNam
                     </svg>
 
                     <div className="absolute bottom-3 left-4 px-2.5 py-0.5 rounded-full bg-slate-900/90 border border-yellow-500/30 text-[10px] font-mono text-yellow-400 backdrop-blur-md">
-                        SYSTEM DESIGN SPEC NOTE #2
+                        ACTION RPG COMBAT UX REPORT #2
                     </div>
                 </div>
             );
@@ -504,17 +504,17 @@ export const ProjectThumbnail: React.FC<ThumbnailProps> = ({ projectId, classNam
                     
                     <svg viewBox="0 0 320 160" className="w-full h-full p-2" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="70" y="20" width="180" height="115" rx="6" fill="#0f172a" stroke="#f43f5e" strokeWidth="1.2" />
-                        <rect x="80" y="32" width="60" height="10" rx="2" fill="#f43f5e" fillOpacity="0.2" stroke="#f43f5e" strokeWidth="0.8" />
-                        <text x="110" y="39" fill="#fda4af" fontSize="6" textAnchor="middle" fontFamily="monospace" fontWeight="bold">SPEC NOTE #3</text>
+                        <rect x="80" y="32" width="68" height="10" rx="2" fill="#f43f5e" fillOpacity="0.2" stroke="#f43f5e" strokeWidth="0.8" />
+                        <text x="114" y="39" fill="#fda4af" fontSize="6" textAnchor="middle" fontFamily="monospace" fontWeight="bold">TECH QA #3</text>
                         
                         {/* Asset Matrix / Debug Log HUD */}
-                        <rect x="85" y="55" width="65" height="30" rx="3" fill="#1e293b" stroke="#f43f5e" strokeWidth="0.8" />
-                        <text x="117" y="67" fill="#fda4af" fontSize="6" textAnchor="middle" fontFamily="monospace">ASSET REPORT</text>
-                        <text x="117" y="78" fill="#94a3b8" fontSize="5.5" textAnchor="middle" fontFamily="monospace">OPTIMIZED: 100%</text>
+                        <rect x="85" y="55" width="68" height="30" rx="3" fill="#1e293b" stroke="#f43f5e" strokeWidth="0.8" />
+                        <text x="119" y="67" fill="#fda4af" fontSize="5.5" textAnchor="middle" fontFamily="monospace">INPUT LATENCY</text>
+                        <text x="119" y="78" fill="#94a3b8" fontSize="5.5" textAnchor="middle" fontFamily="monospace">OPTIMIZED: 60FPS</text>
 
-                        <rect x="165" y="55" width="65" height="30" rx="3" fill="#1e293b" stroke="#38bdf8" strokeWidth="0.8" />
-                        <text x="197" y="67" fill="#38bdf8" fontSize="6" textAnchor="middle" fontFamily="monospace">DEBUG AUDIT</text>
-                        <text x="197" y="78" fill="#34d399" fontSize="5.5" textAnchor="middle" fontFamily="monospace">PASSED VERIFIED</text>
+                        <rect x="162" y="55" width="68" height="30" rx="3" fill="#1e293b" stroke="#38bdf8" strokeWidth="0.8" />
+                        <text x="196" y="67" fill="#38bdf8" fontSize="5.5" textAnchor="middle" fontFamily="monospace">DRAWCALL QA</text>
+                        <text x="196" y="78" fill="#34d399" fontSize="5.5" textAnchor="middle" fontFamily="monospace">BATCH PASSED</text>
 
                         <line x1="80" y1="98" x2="240" y2="98" stroke="#334155" strokeWidth="1" />
                         <line x1="80" y1="108" x2="220" y2="108" stroke="#334155" strokeWidth="1" />
@@ -522,7 +522,7 @@ export const ProjectThumbnail: React.FC<ThumbnailProps> = ({ projectId, classNam
                     </svg>
 
                     <div className="absolute bottom-3 left-4 px-2.5 py-0.5 rounded-full bg-slate-900/90 border border-rose-500/30 text-[10px] font-mono text-rose-400 backdrop-blur-md">
-                        PORTFOLIO ASSET REPORT #3
+                        UNITY 3D TECH PERFORMANCE QA #3
                     </div>
                 </div>
             );

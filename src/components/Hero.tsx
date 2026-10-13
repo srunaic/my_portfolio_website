@@ -47,7 +47,7 @@ export const Hero = () => {
 
                     {/* Mission / Philosophy Description */}
                     <p className="text-text-muted max-w-3xl mx-auto mb-10 text-sm md:text-base leading-relaxed">
-                        몰입감 넘치는 가상세계를 구현하는 <strong>DirectX & Unity 3D 게임 엔진</strong>부터, 대규모 동시 접속을 지탱하는 <strong>고성능 분산 백엔드 서버</strong>, 그리고 지능형 <strong>AI 에이전트 자동화 시스템</strong>까지—견고한 아키텍처와 엔지니어링 철학으로 차세대 소프트웨어를 창조합니다.
+                        몰입감 넘치는 가상세계를 구현하는 <strong>Unity 3D 게임 클라이언트 및 액션 검증</strong>부터, 대규모 동시 접속을 지탱하는 <strong>고성능 분산 백엔드 서버</strong>, 그리고 지능형 <strong>AI 에이전트 자동화 시스템</strong>까지—견고한 아키텍처와 엔지니어링 철학으로 차세대 소프트웨어를 창조합니다.
                     </p>
 
                     {/* Key Metrics Stats Dashboard (Impact KPIs) */}

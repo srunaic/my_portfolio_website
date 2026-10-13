@@ -83,30 +83,30 @@ const projects: Project[] = [
     {
         id: "spec-note-1",
         category: "docs",
-        title: "Project Specification Note #1",
-        type: "기술 설계 기획 문서 (Documentation)",
-        desc: "실시간 아키텍처 및 상세 컴포넌트 설계 방향을 기술한 프로젝트 기획/설계 기술 명세서.",
-        tech: ["PDF", "Architecture", "Design Spec"],
+        title: "[KOG 엘소드] 콤보 액션 메커니즘 및 손맛 개선 Fun QA 분석서",
+        type: "게임성 검증 & 역기획서 (Fun QA & Reverse Planning)",
+        desc: "KOG <엘소드>의 횡스크롤 콤보 액션 및 히트스톱(역경직) 연출 심층 분석. 후반 레이드 광역 스킬 난사로 인한 '조작 손맛 희석' 원인 규명 및 커맨드 콤보-기믹 연계 보상 밸런스 개선안 제안.",
+        tech: ["KOG Elsword", "Fun QA", "Hit-stop Analysis", "Combo Balance"],
         link: "https://drive.google.com/file/d/1BclOv8S7KH_gkG-2oa4jo2rvKITX3xVo/view?usp=drive_link",
         isRepo: false
     },
     {
         id: "spec-note-2",
         category: "docs",
-        title: "Project Specification Note #2",
-        type: "기술 설계 기획 문서 (Documentation)",
-        desc: "시스템 제어 흐름 설계와 모바일 연동 핵심 로직에 대한 기술 설계서.",
-        tech: ["PDF", "System Design", "Spec Note"],
+        title: "[액션 RPG] 공방(패링/회피) 판정 및 카메라 UX 검증 리포트",
+        type: "전투 메커니즘 & UX 분석 (Combat UX & Balance Audit)",
+        desc: "<명조>, <드래곤소드(하운드13)>, <로스트아크>의 공방 시스템 비교 분석. 저스트 회피·패링 판정 프레임 검증, 거대 보스전 카메라 앵글 이탈 및 공격 전조 가림 현상 해결을 위한 스마트 줌아웃 가이드.",
+        tech: ["Parry & Evade", "Camera UX", "Hitbox Audit", "Action Balance"],
         link: "https://drive.google.com/file/d/1CSflhuA75dAJCB6kMGngqIIMF04ucXrj/view?usp=drive_link",
         isRepo: false
     },
     {
         id: "spec-note-3",
         category: "docs",
-        title: "Project Specification Note #3",
-        type: "기술 설계 기획 문서 (Documentation)",
-        desc: "개발 진행 과정에서의 핵심 문제 해결 방식과 포트폴리오 에셋 리포트.",
-        tech: ["PDF", "Portfolio", "Asset Report"],
+        title: "[3D 최적화] Unity 엔진 기반 인풋렉 및 렌더링 성능 Fun QA 보고서",
+        type: "기술 기반 QA & 최적화 (Technical QA & Latency Audit)",
+        desc: "Unity 3D 기반 액션 게임 개발 및 실무 최적화 경험을 바탕으로, 드로우콜 병목과 프레임 드랍이 입력 지연(인풋렉) 및 조작 쾌감에 미치는 영향 정량 분석. 타격 손맛을 유지하는 리소스 경량화 표준 수립.",
+        tech: ["Unity 3D", "Input Latency", "DrawCall Optimization", "Tech QA"],
         link: "https://drive.google.com/file/d/15Y0hztE1ScD6eXezsbjoZV8lUOhlKvdj/view?usp=drive_link",
         isRepo: false
     },
@@ -120,16 +120,7 @@ const projects: Project[] = [
         link: "https://github.com/srunaic/sensor_plc_rasberrypie-",
         isRepo: true
     },
-    {
-        id: "directx-engine",
-        category: "game-server",
-        title: "DirectX Game Engine",
-        type: "게임 엔진 / 그래픽스 (Game Engine Graphics)",
-        desc: "DirectX 11/12 기반 자체 물리/렌더링 게임 엔진 제작. 드로우콜 최적화, 기하 변환 기법, 컴포넌트 기반 오브젝트 아키텍처 적용.",
-        tech: ["C++", "DirectX", "HLSL", "Win32 API"],
-        link: "https://github.com/srunaic/DirectX_Game_EngineMaker",
-        isRepo: true
-    },
+
     {
         id: "ai-hacker-protection",
         category: "ai",
