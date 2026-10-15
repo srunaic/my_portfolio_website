@@ -5,7 +5,7 @@ import { ProjectThumbnail } from './ProjectThumbnails';
 
 interface Project {
     id: string;
-    category: 'game-server' | 'ai' | 'web-iot' | 'docs';
+    category: 'game-server' | 'ai' | 'web-iot' | 'docs' | 'egov-nexacro';
     title: string;
     type: string;
     desc: string;
@@ -16,17 +16,18 @@ interface Project {
 }
 
 interface CategoryItem {
-    id: 'all' | 'game-server' | 'ai' | 'web-iot' | 'docs';
+    id: 'all' | 'game-server' | 'ai' | 'web-iot' | 'docs' | 'egov-nexacro';
     label: string;
     hidden?: boolean;
 }
 
 const CATEGORIES: CategoryItem[] = [
     { id: 'all', label: '전체' },
+    { id: 'egov-nexacro', label: 'eGovFrame & Nexacro' },
     { id: 'game-server', label: '게임 & 서버' },
     { id: 'ai', label: '인공지능 & 자동화' },
     { id: 'web-iot', label: '웹, IoT & GIS' },
-    { id: 'docs', label: '기획 & 문서' }
+    { id: 'docs', label: '기획 & 문서', hidden: true } // UI 숨김 처리 (추후 복원 및 백업 가능)
 ];
 
 const projects: Project[] = [
@@ -81,6 +82,21 @@ const projects: Project[] = [
         isRepo: true
     },
     {
+        id: "integrated-learning-materials",
+        category: "egov-nexacro",
+        title: "Integrated Learning Materials",
+        type: "전자정부 & 넥사크로 시스템 (eGovFrame & Nexacro)",
+        desc: "전자정부표준프레임워크(eGovFramework)와 투비소프트 Nexacro UI 솔루션 기반의 엔터프라이즈 통합 실무 학습 시스템 및 아키텍처 아카이브. 공공/기업용 웹 프레임워크와 UI/UX 컴포넌트 연동 로직 구현.",
+        tech: ["eGovFramework", "Nexacro", "Spring Framework", "Java", "MyBatis"],
+        link: "https://github.com/srunaic/Integrated_learning_materials",
+        isRepo: true
+    },
+    /* 
+     * [기획 & 문서 백업 데이터 - UI 제거 완료] 
+     * KOG 엘소드 등 기획 문서는 src/data/backup_docs.ts에 백업 보관되어 있습니다.
+     * 추후 복원 시 backup_docs.ts를 import하거나 아래 주석을 해제하시면 됩니다.
+     *
+    {
         id: "spec-note-1",
         category: "docs",
         title: "[KOG 엘소드] 콤보 액션 메커니즘 및 손맛 개선 Fun QA 분석서",
@@ -88,7 +104,8 @@ const projects: Project[] = [
         desc: "KOG <엘소드>의 횡스크롤 콤보 액션 및 히트스톱(역경직) 연출 심층 분석. 후반 레이드 광역 스킬 난사로 인한 '조작 손맛 희석' 원인 규명 및 커맨드 콤보-기믹 연계 보상 밸런스 개선안 제안.",
         tech: ["KOG Elsword", "Fun QA", "Hit-stop Analysis", "Combo Balance"],
         link: "https://drive.google.com/file/d/1BclOv8S7KH_gkG-2oa4jo2rvKITX3xVo/view?usp=drive_link",
-        isRepo: false
+        isRepo: false,
+        hidden: true
     },
     {
         id: "spec-note-2",
@@ -98,7 +115,8 @@ const projects: Project[] = [
         desc: "<명조>, <드래곤소드(하운드13)>, <로스트아크>의 공방 시스템 비교 분석. 저스트 회피·패링 판정 프레임 검증, 거대 보스전 카메라 앵글 이탈 및 공격 전조 가림 현상 해결을 위한 스마트 줌아웃 가이드.",
         tech: ["Parry & Evade", "Camera UX", "Hitbox Audit", "Action Balance"],
         link: "https://drive.google.com/file/d/1CSflhuA75dAJCB6kMGngqIIMF04ucXrj/view?usp=drive_link",
-        isRepo: false
+        isRepo: false,
+        hidden: true
     },
     {
         id: "spec-note-3",
@@ -108,8 +126,10 @@ const projects: Project[] = [
         desc: "Unity 3D 기반 액션 게임 개발 및 실무 최적화 경험을 바탕으로, 드로우콜 병목과 프레임 드랍이 입력 지연(인풋렉) 및 조작 쾌감에 미치는 영향 정량 분석. 타격 손맛을 유지하는 리소스 경량화 표준 수립.",
         tech: ["Unity 3D", "Input Latency", "DrawCall Optimization", "Tech QA"],
         link: "https://drive.google.com/file/d/15Y0hztE1ScD6eXezsbjoZV8lUOhlKvdj/view?usp=drive_link",
-        isRepo: false
+        isRepo: false,
+        hidden: true
     },
+    */
     {
         id: "sensor-plc",
         category: "web-iot",

@@ -527,6 +527,92 @@ export const ProjectThumbnail: React.FC<ThumbnailProps> = ({ projectId, classNam
                 </div>
             );
 
+        case 'integrated-learning-materials':
+            return (
+                <div className={`relative w-full h-44 bg-slate-950 overflow-hidden rounded-t-xl flex items-center justify-center ${className}`}>
+                    <div className="absolute inset-0 bg-[radial-gradient(#0284c7_1px,transparent_1px)] [background-size:16px_16px] opacity-25" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-blue-600/15" />
+                    
+                    <svg viewBox="0 0 320 160" className="w-full h-full p-2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="egovGrad" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0%" stopColor="#38bdf8" stopOpacity="0.8"/>
+                                <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.3"/>
+                            </linearGradient>
+                            <linearGradient id="nexaGrad" x1="0" y1="0" x2="1" y2="0">
+                                <stop offset="0%" stopColor="#f97316"/>
+                                <stop offset="100%" stopColor="#fb923c"/>
+                            </linearGradient>
+                        </defs>
+
+                        {/* Enterprise Desktop Window Frame */}
+                        <rect x="25" y="15" width="270" height="128" rx="8" fill="#090d16" stroke="url(#egovGrad)" strokeWidth="1.2" />
+                        
+                        {/* Title Bar */}
+                        <rect x="25" y="15" width="270" height="22" rx="8" fill="#0f172a" />
+                        <line x1="25" y1="37" x2="295" y2="37" stroke="#1e293b" strokeWidth="1" />
+                        <circle cx="38" cy="26" r="3" fill="#ef4444" />
+                        <circle cx="48" cy="26" r="3" fill="#f59e0b" />
+                        <circle cx="58" cy="26" r="3" fill="#10b981" />
+                        <text x="160" y="29" fill="#38bdf8" fontSize="7.5" textAnchor="middle" fontFamily="monospace" fontWeight="bold">eGovFrame 3.x/4.x · Nexacro N Enterprise UI</text>
+
+                        {/* Left: eGovFrame Backend Architecture Box */}
+                        <rect x="35" y="44" width="125" height="88" rx="5" fill="#0f172a" stroke="#334155" strokeWidth="0.8" />
+                        <rect x="42" y="50" width="111" height="15" rx="3" fill="#1e293b" stroke="#3b82f6" strokeWidth="0.6" />
+                        <text x="97" y="60" fill="#60a5fa" fontSize="6.2" textAnchor="middle" fontFamily="monospace" fontWeight="bold">🏛️ eGov 표준 프레임워크</text>
+
+                        {/* Spring MVC Pipeline */}
+                        <rect x="42" y="70" width="111" height="13" rx="2.5" fill="#064e3b" stroke="#10b981" strokeWidth="0.6" />
+                        <text x="97" y="79" fill="#6ee7b7" fontSize="5.5" textAnchor="middle" fontFamily="monospace">Controller ⇄ ServiceImpl</text>
+
+                        <rect x="42" y="86" width="111" height="13" rx="2.5" fill="#1e1b4b" stroke="#6366f1" strokeWidth="0.6" />
+                        <text x="97" y="95" fill="#a5b4fc" fontSize="5.5" textAnchor="middle" fontFamily="monospace">DAO ⇄ MyBatis XML (SQL)</text>
+
+                        <rect x="42" y="102" width="111" height="22" rx="2.5" fill="#1e293b" stroke="#334155" strokeWidth="0.5" />
+                        <text x="47" y="112" fill="#38bdf8" fontSize="5" fontFamily="monospace">⚡ NexacroResult Binding</text>
+                        <text x="47" y="120" fill="#94a3b8" fontSize="4.8" fontFamily="monospace">⚡ VariableList & DataSetMap</text>
+
+                        {/* Center Connection Arrow */}
+                        <path d="M162 88 L170 88" stroke="#f97316" strokeWidth="1.5" strokeDasharray="2 2" />
+
+                        {/* Right: Nexacro Grid & Dataset Component */}
+                        <rect x="172" y="44" width="113" height="88" rx="5" fill="#0f172a" stroke="#334155" strokeWidth="0.8" />
+                        <rect x="178" y="50" width="101" height="15" rx="3" fill="#431407" stroke="url(#nexaGrad)" strokeWidth="0.7" />
+                        <text x="228" y="60" fill="#fdba74" fontSize="6.2" textAnchor="middle" fontFamily="monospace" fontWeight="bold">🟧 NEXACRO N/17 GRID</text>
+
+                        {/* Mini Dataset Table UI */}
+                        <rect x="178" y="70" width="101" height="54" rx="2" fill="#1e293b" stroke="#334155" strokeWidth="0.5" />
+                        <line x1="178" y1="80" x2="279" y2="80" stroke="#334155" strokeWidth="0.6" />
+                        <line x1="178" y1="92" x2="279" y2="92" stroke="#334155" strokeWidth="0.5" />
+                        <line x1="178" y1="104" x2="279" y2="104" stroke="#334155" strokeWidth="0.5" />
+                        <line x1="178" y1="116" x2="279" y2="116" stroke="#334155" strokeWidth="0.5" />
+                        
+                        <line x1="205" y1="70" x2="205" y2="124" stroke="#334155" strokeWidth="0.5" />
+                        <line x1="242" y1="70" x2="242" y2="124" stroke="#334155" strokeWidth="0.5" />
+                        
+                        <text x="191" y="77" fill="#94a3b8" fontSize="5" textAnchor="middle" fontFamily="monospace">ID</text>
+                        <text x="223" y="77" fill="#94a3b8" fontSize="5" textAnchor="middle" fontFamily="monospace">DS_NAME</text>
+                        <text x="260" y="77" fill="#94a3b8" fontSize="5" textAnchor="middle" fontFamily="monospace">STATUS</text>
+
+                        <text x="191" y="88" fill="#cbd5e1" fontSize="4.8" textAnchor="middle" fontFamily="monospace">001</text>
+                        <text x="223" y="88" fill="#38bdf8" fontSize="4.8" textAnchor="middle" fontFamily="monospace">ds_member</text>
+                        <text x="260" y="88" fill="#34d399" fontSize="4.8" textAnchor="middle" fontFamily="monospace">NORMAL</text>
+
+                        <text x="191" y="100" fill="#cbd5e1" fontSize="4.8" textAnchor="middle" fontFamily="monospace">002</text>
+                        <text x="223" y="100" fill="#38bdf8" fontSize="4.8" textAnchor="middle" fontFamily="monospace">ds_common</text>
+                        <text x="260" y="100" fill="#34d399" fontSize="4.8" textAnchor="middle" fontFamily="monospace">SYNC</text>
+
+                        <text x="191" y="112" fill="#cbd5e1" fontSize="4.8" textAnchor="middle" fontFamily="monospace">003</text>
+                        <text x="223" y="112" fill="#f59e0b" fontSize="4.8" textAnchor="middle" fontFamily="monospace">ds_trans</text>
+                        <text x="260" y="112" fill="#fb923c" fontSize="4.8" textAnchor="middle" fontFamily="monospace">UPDATE</text>
+                    </svg>
+
+                    <div className="absolute bottom-3 left-4 px-2.5 py-0.5 rounded-full bg-slate-900/90 border border-blue-500/30 text-[10px] font-mono text-blue-400 backdrop-blur-md">
+                        EGOVFRAME & NEXACRO N/17
+                    </div>
+                </div>
+            );
+
         default:
             return null;
     }
