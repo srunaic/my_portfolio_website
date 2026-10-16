@@ -59,7 +59,8 @@ const projects: Project[] = [
         desc: "LLM 기반 데스크톱 AI 인텔리전트 비서 프로그램. 자연어 분석 기반의 시스템 제어 및 상호작용형 대안 작업 구현.",
         tech: ["Python", "LangChain", "PyQt", "LLM"],
         link: "https://github.com/srunaic/Luna-AI-Agent",
-        isRepo: true
+        isRepo: true,
+        hidden: true
     },
     {
         id: "ai-dashboard",
